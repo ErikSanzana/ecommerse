@@ -1,0 +1,103 @@
+main{
+    display: grid;
+    grid-template-areas: "nav nav "
+    "aside section "
+    "footer footer ";
+    height: 100vh;
+    grid-template-columns: 15% auto ;
+    grid-template-rows: 7% auto 7%;
+}
+nav{
+
+    display: flex;
+    background-color: #25527B;
+    color: white;
+    align-items: center;
+    grid-area:nav;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+    color: black;
+    opacity: 40%;
+    grid-area:footer;
+
+}
+
+aside{
+    background-color:#E6C0E0;
+    border: 3px solid;
+    grid-area: aside;
+}
+section{
+
+    border-color: black;
+    background-color: #657CFC;
+    border: 3px solid;
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 0.5rem;
+}
+.opacity {
+    opacity: 0.5;
+  }
+.Audifono{
+    
+    border: green 2px solid;
+    min-height: 200px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/audifono.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+.Monitor{
+    border: green 2px solid;
+    min-height: 200px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/monitor.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+.Mouse{
+    border: green 2px solid;
+    min-height: 200px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/mouse.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+.Teclado{
+    border: green 2px solid;
+    min-height: 200px;
+    width: 100%;
+    height: 300px;
+    background-image: url("../img/teclado.jpeg");
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+.grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem;
+}
+button{
+    border:none;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 0.5rem;
+}
+.grid:hover{
+    background-color: gold;
+}
+li:hover{
+    color: aqua;
+}
